@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Salon Hadakari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS File/gallery.css">
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="PNG File/logo1.jpg" alt="Salon Hadakari Logo">
+                <span>Salon Hadakari</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Our Gallery</h1>
+            <p>Discover the artistry and elegance that defines Salon Hadakari through our stunning collection of transformations</p>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <section class="filter-navigation">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair Styling</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="nails">Nails</button>
+                <button class="filter-btn" data-filter="skincare">Skincare</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Services Section -->
+    <section class="gallery-section" id="all-section">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            <div class="gallery-grid">
+                <!-- Items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Styling Section -->
+    <section class="gallery-section" id="hair-section">
+        <div class="container">
+            <h2 class="section-title">Hair Styling</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair Cut.jpg" alt="Hair Cut">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Hair Cut</h3>
+                            <p>Precision styling with contemporary flair</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hair Cut</h3>
+                        <p>Transform your look with our precision hair cutting techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair Color1.jpg" alt="Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Hair Color</h3>
+                            <p>Natural-looking sun-kissed effect</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hair Color</h3>
+                        <p>Get beautiful, low-maintenance color with our balayage technique.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair3.jpg" alt="Elegant Updo">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Elegant Updo</h3>
+                            <p>Sophisticated styles for special occasions</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Elegant Updo</h3>
+                        <p>Perfect for weddings, proms, and other formal events.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair4.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair5.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair6.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair7.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair8.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Hair9.jpg" alt="Vibrant Hair Color">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Vibrant Hair Color</h3>
+                            <p>Bold and beautiful color transformations</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vibrant Hair Color</h3>
+                        <p>Express yourself with our vibrant color services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Makeup Section -->
+    <section class="gallery-section" id="makeup-section">
+        <div class="container">
+            <h2 class="section-title">Makeup</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg" alt="Glamour Makeup">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Glamour Makeup</h3>
+                            <p>Bold and beautiful evening look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Glamour Makeup</h3>
+                        <p>Step into the spotlight with our glamour makeup artistry.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg" alt="Natural Makeup">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Natural Makeup</h3>
+                            <p>Fresh and flawless everyday look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Natural Makeup</h3>
+                        <p>Enhance your natural beauty with our subtle makeup techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg" alt="Editorial Makeup">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Editorial Makeup</h3>
+                            <p>High-fashion artistic looks</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Editorial Makeup</h3>
+                        <p>Perfect for photoshoots and special events.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2531553/pexels-photo-2531553.jpeg" alt="Smokey Eye">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Smokey Eye</h3>
+                            <p>Dramatic and sultry eye makeup</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Smokey Eye</h3>
+                        <p>Create a dramatic look with our smokey eye techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bridal Section -->
+    <section class="gallery-section" id="bridal-section">
+        <div class="container">
+            <h2 class="section-title">Bridal</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal1.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal2.jpg" alt="Bridal Hairstyle">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Hairstyle</h3>
+                            <p>Classic and romantic updo</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Hairstyle</h3>
+                        <p>Complete your bridal look with our elegant hairstyling.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal3.jpg" alt="Bridal Makeup Trial">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Makeup Trial</h3>
+                            <p>Test your perfect wedding look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Makeup Trial</h3>
+                        <p>Ensure your wedding day look is perfect with a trial session.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal4.jpg" alt="Bridal Party">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Party</h3>
+                            <p>Beautiful looks for your bridesmaids</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Party</h3>
+                        <p>Coordinate looks for your entire wedding party.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal5.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal7.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal8.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal9.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal10.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal11.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal12.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal13.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal14.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal15.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PNG File/gallary/Bridal16.jpg" alt="Bridal Elegance">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Bridal Elegance</h3>
+                            <p>Your perfect wedding day look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bridal Elegance</h3>
+                        <p>Make your wedding day magical with our bridal beauty services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nails Section -->
+    <section class="gallery-section" id="nails-section">
+        <div class="container">
+            <h2 class="section-title">Nails</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/887352/pexels-photo-887352.jpeg" alt="Nail Art Design">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Nail Art Design</h3>
+                            <p>Creative and stylish nail designs</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nail Art Design</h3>
+                        <p>Express your creativity with our artistic nail designs.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg" alt="French Manicure">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>French Manicure</h3>
+                            <p>Classic and timeless look</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>French Manicure</h3>
+                        <p>The perfect classic look for any occasion.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3997375/pexels-photo-3997375.jpeg" alt="Gel Extensions">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Gel Extensions</h3>
+                            <p>Long-lasting nail enhancements</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gel Extensions</h3>
+                        <p>Get the perfect length and shape with our gel extensions.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg" alt="Spa Pedicure">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Spa Pedicure</h3>
+                            <p>Luxurious foot care treatment</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Spa Pedicure</h3>
+                        <p>Pamper your feet with our relaxing spa pedicure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Section -->
+    <section class="gallery-section" id="skincare-section">
+        <div class="container">
+            <h2 class="section-title">Skincare</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/5069611/pexels-photo-5069611.jpeg" alt="Facial Treatment">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Facial Treatment</h3>
+                            <p>Rejuvenating skincare therapy</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Facial Treatment</h3>
+                        <p>Revitalize your skin with our professional facial treatments.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg" alt="Anti-Aging Treatment">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Anti-Aging Treatment</h3>
+                            <p>Reduce signs of aging</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Anti-Aging Treatment</h3>
+                        <p>Turn back the clock with our advanced anti-aging treatments.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/6621337/pexels-photo-6621337.jpeg" alt="Acne Treatment">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Acne Treatment</h3>
+                            <p>Clear and healthy skin</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Acne Treatment</h3>
+                        <p>Specialized treatments to combat acne and prevent breakouts.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/6621336/pexels-photo-6621336.jpeg" alt="Hydrating Facial">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Hydrating Facial</h3>
+                            <p>Deep moisture infusion</p>
+                            <button class="view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hydrating Facial</h3>
+                        <p>Restore moisture and glow to dry, dehydrated skin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Look?</h2>
+                <p>Book your appointment today and experience the luxury of Salon Hadakari</p>
+                <a href="booking.html" class="cta-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="PNG File/logo1.jpg" alt="Salon Hadakari Logo" class="footer-logo">
+                    <p>Where beauty meets elegance and every visit leaves you radiant.</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=100072260167722"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#hair">Hair Styling</a></li>
+                        <li><a href="services.html#color">Hair Coloring</a></li>
+                        <li><a href="services.html#bridal">Bridal Makeup</a></li>
+                        <li><a href="services.html#facials">Facials</a></li>
+                        <li><a href="services.html#nails">Nail Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Rejinawaththa junction, Kalutara, Sri Lanka</li>
+                        <li><i class="fas fa-phone"></i> 077 401 9277</li>
+                        <li><i class="fas fa-envelope"></i> mtdehansa777@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8AM - 7PM</li>
+                    </ul>
+                    <a href="booking.html"><button class="footer-book-btn">Book Appointment</button></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Salon Hadakari. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="teamof.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript File/gallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Hadakari - Booking</title>
+    <link rel="stylesheet" href="CSS File/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="PNG File/logo1.jpg" alt="Salon Hadakari Logo">
+                <span>Salon Hadakari</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!--<li><a href="booking.html" class="active">Booking</a></li>-->
+                    <li><a href="booking.html" class="nav-cta active">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="floating-element" style="width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+            <div class="floating-element" style="width: 150px; height: 150px; top: 60%; left: 70%;"></div>
+            <div class="floating-element" style="width: 80px; height: 80px; top: 30%; left: 80%;"></div>
+            <div class="floating-element" style="width: 120px; height: 120px; top: 70%; left: 20%;"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Step into Radiance at Salon Hadakari</h1>
+            <h3>Ready for a little indulgence?</h3>
+            <p>Book your appointment with our expert stylists and experience premium salon services in a relaxing environment. Schedule your appointment today and let us take care of your beauty needs.</p>
+            <div class="btn-group">
+                <a href="#booking-process"><button class="primary-btn">Book Now</button></a>
+                <a href="services.html"><button class="secondary-btn">Our Services</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process Section -->
+    <section id="booking-process" class="booking-container">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Book Your Appointment</h1>
+                <p>Experience the perfect blend of luxury and expertise at Salon Hadakari. Our simple booking process ensures you get the exact service you desire with the stylist who understands your vision.</p>
+            </div>
+
+            <div class="booking-step" id="step1">
+                <h2>Select Your Stylist</h2>
+                <div class="staff-cards">
+                    <div class="staff-card" data-staff="Sathika Ranathunga">
+                        <div class="staff-image" style="background-image: url('PNG File/Sathika.jpg')"></div>
+                        <div class="staff-info">
+                            <h4>Sathika Ranathunga</h4>
+                            <div class="staff-details">
+                                <p><i class="fas fa-award"></i> Master Stylist</p>
+                                <p><i class="fas fa-clock"></i> 10 Years Experience</p>
+                                <p><i class="fas fa-star"></i> Specializes in Hair Coloring</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-staff="Sanduni Savindi">
+                        <div class="staff-image" style="background-image: url('PNG File/Sanduni.jpg')"></div>
+                        <div class="staff-info">
+                            <h4>Sanduni Savindi</h4>
+                            <div class="staff-details">
+                                <p><i class="fas fa-award"></i> Senior Stylist</p>
+                                <p><i class="fas fa-clock"></i> 8 Years Experience</p>
+                                <p><i class="fas fa-star"></i> Specializes in Hair Treatments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-card" data-staff="Shetha Shashipraba">
+                        <div class="staff-image" style="background-image: url('https://randomuser.me/api/portraits/women/33.jpg')"></div>
+                        <div class="staff-info">
+                            <h4>Shetha Shashipraba</h4>
+                            <div class="staff-details">
+                                <p><i class="fas fa-award"></i> Master Stylist</p>
+                                <p><i class="fas fa-clock"></i> 5 Years Experience</p>
+                                <p><i class="fas fa-star"></i> Specializes in Haircuts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextStep(1)">Next</button>
+                <p class="info-text">Salon Hadakari will need to approve your request date and time in order to confirm your appointment!</p>
+            </div>
+
+            <div class="booking-step hidden" id="step2">
+                <h2>Select Your Preferred Date</h2>
+                <div class="date-picker">
+                    <div class="month-header">
+                        <button class="nav-btn prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 class="current-month">November 2025</h3>
+                        <button class="nav-btn next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days-grid"></div>
+                </div>
+                <button class="next-btn" onclick="nextStep(2)">Next</button>
+                <p class="info-text">Salon Hadakari will need to approve your request date and time in order to confirm your appointment!</p>
+            </div>
+
+            <div class="booking-step hidden" id="step3">
+                <h2>Select Your Preferred Time</h2>
+                <div class="time-slots">
+                    <div class="time-row">
+                        <div class="time-slot">9:00 AM</div>
+                        <div class="time-slot">9:30 AM</div>
+                        <div class="time-slot">10:00 AM</div>
+                        <div class="time-slot">10:30 AM</div>
+                        <div class="time-slot">11:00 AM</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-slot">11:30 AM</div>
+                        <div class="time-slot">12:00 PM</div>
+                        <div class="time-slot">12:30 PM</div>
+                        <div class="time-slot">1:00 PM</div>
+                        <div class="time-slot">1:30 PM</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-slot">2:00 PM</div>
+                        <div class="time-slot">2:30 PM</div>
+                        <div class="time-slot">3:00 PM</div>
+                        <div class="time-slot">3:30 PM</div>
+                        <div class="time-slot">4:00 PM</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-slot">4:30 PM</div>
+                        <div class="time-slot">5:00 PM</div>
+                        <div class="time-slot">5:30 PM</div>
+                        <div class="time-slot">6:00 PM</div>
+                        <div class="time-slot">6:30 PM</div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="confirmBooking()">Confirm Booking</button>
+                <p class="info-text">Salon Hadakari will need to approve your request date and time in order to confirm your appointment!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="hadakari-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="PNG File/logo1.jpg" alt="Salon Hadakari" class="footer-logo">
+                <p>Where beauty meets elegance and every visit leaves you radiant.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="services.html#hair">Hair Styling</a></li>
+                    <li><a href="services.html#color">Hair Coloring</a></li>
+                    <li><a href="services.html#bridal">Bridal Makeup</a></li>
+                    <li><a href="services.html#facials">Facials</a></li>
+                    <li><a href="services.html#nails">Manicure & Pedicure</a></li>
+                    <li><a href="services.html#spa">Spa Treatments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Rejinawaththa junction , Kalutara, Sri Lanka</li>
+                    <li><i class="fas fa-phone"></i> 077 401 9277</li>
+                    <li><i class="fas fa-envelope"></i> mtdehansa777@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 7PM</li>
+                </ul>
+                <a href="booking.html"><button class="footer-book-btn">Book Appointment</button></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2023</span> Salon Hadakari. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript File/booking.js"></script>
+</body>
+</html>
